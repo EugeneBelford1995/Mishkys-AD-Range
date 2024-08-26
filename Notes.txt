@@ -1,0 +1,1 @@
+Hey, make sure you lock down who can access the Scripts folder. It has our admin functions in it.
