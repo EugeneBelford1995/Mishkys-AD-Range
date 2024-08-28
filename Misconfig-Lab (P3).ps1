@@ -3,7 +3,7 @@ Expand-Archive "C:\Share\AdminStuff\TODO.zip" -DestinationPath "C:\Share\AdminSt
 Remove-Item "C:\Share\AdminStuff\TODO.zip"
 Grant-SmbShareAccess -Name "Share" -AccountName "us\AD Admins" -AccessRight Full -Force
 
-$ACL = Get-Acl -Path "C:\Share\AdminStuff\Admin_Notes.txt"
+$ACL = Get-Acl -Path "C:\Share\AdminStuff\Admin_Stuff.txt"
 #Disable inheritance 
 $ACL.SetAccessRuleProtection($true,$false)
 #Add AD Admins with read rights
@@ -19,4 +19,4 @@ $ACL.SetAccessRule($AccessRule)
 $ACL.SetAccessRule($AccessRule2)
 $ACL.RemoveAccessRule($AccessRule3)
 $ACL.SetAccessRule($AccessRule4)
-$ACL | Set-Acl -Path "C:\Share\AdminStuff\Admin_Notes.txt"
+$ACL | Set-Acl -Path "C:\Share\AdminStuff\Admin_Stuff.txt"
