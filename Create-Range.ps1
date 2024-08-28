@@ -137,7 +137,7 @@ Invoke-Command -VMName "US-DC" -FilePath '.\VMConfig (ChildDC P2).ps1' -Credenti
 Start-Sleep -Seconds 300
 #'Guest Service Interface' must be enabled for Copy-VMFile to work
 Enable-VMIntegrationService "Guest Service Interface" -VMName "US-DC"
-Copy-VMFile "US-DC" -SourcePath ".\Users.csv" -DestinationPath "C:\Users.csv" -CreateFullPath -FileSource Host -Credential $ChildDomainAdminCredObject
+Copy-VMFile "US-DC" -SourcePath ".\Users.csv" -DestinationPath "C:\Users.csv" -CreateFullPath -FileSource Host
 Start-Sleep -Seconds 30 
 Invoke-Command -VMName "US-DC" -FilePath '.\VMConfig (ChildDC P3).ps1' -Credential $ChildDomainAdminCredObject   #Creates the OUs, users, & groups in us.lab.local
 
