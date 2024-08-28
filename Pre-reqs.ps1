@@ -8,3 +8,8 @@ Invoke-WebRequest -Uri "https://software-static.download.prss.microsoft.com/sg/d
 Write-Host "Grab a x64 ISO from https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022 and save it in the ISOs folder."
 
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+
+Install-Module -Name Convert-WindowsImage
+
+Write-Host "If the above fails to install Convert-WindowsImage then download it from https://github.com/x0nn/Convert-WindowsImage"
+Write-Host "Save it in C:\VM_Stuff_Share\Convert-WindowsImage (from PS Gallery)"
