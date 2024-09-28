@@ -41,6 +41,8 @@ $UsersToAdd2 = (Get-ADUser -Filter * -SearchBase "ou=Server_Admins,$ADRoot").Sam
 ForEach($UserToAdd2 in $UsersToAdd2)
 {Add-ADGroupMember -Identity "Server Admins" -Members $UserToAdd2}
 
+Set-ADUser "Jen.Barber" -ChangePasswordAtLogon $true
+
 New-ADComputer -Name "US-Client" -SAMAccountName "US-Client" -DisplayName "US-Client" -Path "ou=clients,$ADRoot"
 New-ADComputer -Name "US-ClientII" -SAMAccountName "US-ClientII" -DisplayName "US-ClientII" -Path "ou=clients,$ADRoot"
 
