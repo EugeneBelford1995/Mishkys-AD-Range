@@ -32,7 +32,7 @@ $convertParams = @{
 }
 
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
-. '..\Convert-WindowsImage (from PS Gallery)\Convert-WindowsImage.ps1'
+. '.\Convert-WindowsImage.ps1'
 
 Convert-WindowsImage @convertParams
 
