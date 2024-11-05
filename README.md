@@ -10,3 +10,5 @@ Run Generate-Traffic.ps1 to import the function.
 Fire up your Kali VM, run the command 'Generate-Traffic', and begain atacking the range.
 
 A lengthier explanation and our thought process is here: https://happycamper84.medium.com/mishkys-ad-range-382a24884825
+
+An expansion pack to Mishky's AD Range is here (https://github.com/EugeneBelford1995/Mishkys-Range-Expansion-Pack/tree/main). It includes enumeration and pivoting to another forest, DACL abuse on computer accounts and AD CS templates, and more. 
