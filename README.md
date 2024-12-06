@@ -12,3 +12,10 @@ Fire up your Kali VM, run the command 'Generate-Traffic', and begain atacking th
 A lengthier explanation and our thought process is here: https://happycamper84.medium.com/mishkys-ad-range-382a24884825
 
 An expansion pack to Mishky's AD Range is here (https://github.com/EugeneBelford1995/Mishkys-Range-Expansion-Pack/tree/main). It includes enumeration and pivoting to another forest, DACL abuse on computer accounts and AD CS templates, and more. 
+
+--- Important note if you are trying to run this on a Win10 laptop with Hyper-V enabled ---
+
+Go into Lines 39 - 41 of Create-Range.ps1:
+Set the RAM to something more like 2 GB startup, 3 GB max (depending on how much RAM you have)
+Change "Testing" to "Default Switch" as your Win10 OS likely put the Default Switch on your Wi-Fi adapter that's actually network connected.
+Change the PrefixLength to 20 in P1.ps1 for each VM.
