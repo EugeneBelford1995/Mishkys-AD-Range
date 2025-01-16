@@ -1,4 +1,12 @@
 # Mishkys-AD-Range
+Edit to add: I have since created Version 1.1
+
+Mishky’s AD Range is here: https://github.com/EugeneBelford1995/Mishkys-AD-Range-Version1.1/tree/main
+
+The Expansion pack (second forest) is here: https://github.com/EugeneBelford1995/Mishkys-Range-Expansion-Pack-Version1.1
+
+--- break ---
+
 Mishky's AD Range &amp; The Escalation Path from Hell
 
 Pre-reqs.ps1 creates the folder structure, VMSwitch, etc that I tested this out with. It will also download a Windows Server 2022 ISO and save it with the expected name.
